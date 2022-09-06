@@ -10,14 +10,17 @@ var img2 = document.querySelector(".img2");
 
 // setting dice images using random no. names of images(dice1-dice6).png
 
-img1.setAttribute("src", "/images/dice" + i + ".png");
-img2.setAttribute("src", "/images/dice" + j + ".png");
+img1.setAttribute("src", "images/dice" + i + ".png");
+img2.setAttribute("src", "images/dice" + j + ".png");
 
 // decides winner
+
 if (i > j) {
   win.innerText = " 🚩 Player 1 wins";
-} else if (i === j) {
+} 
+else if (i === j) {
   win.innerText = "Draw!";
 } else {
+  
   win.innerText = "Player 2 wins 🚩";
 }
